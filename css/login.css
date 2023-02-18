@@ -1,0 +1,58 @@
+body{
+   
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+
+label{
+    margin-bottom: 10px;
+}
+#login{
+    border-radius: 20px;
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 90%;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 3px solid #e8eaed;
+}
+
+#submit{
+    background-color: #1448f3;
+border: none;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+#fPassword{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#signup{
+    color: blue;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#acc{
+    text-align: center;
+}

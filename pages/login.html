@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="../js/firebase.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div id="login">
+        <h1>Log In</h1>
+        <label for="email">Email address:</label><input type="email" placeholder="Email Address" name="email" id="email">
+        <label for="password">Password:</label><input type="password" placeholder="Password" name="password" id="password">
+        <p id="message"></p>
+        <input type="submit" value="Log In" id="submit" onclick="login()">
+        <a href="./forget_password.html" id="fPassword">Forget Password?</a>
+        <p id="acc">Don't have an account? <a href="./signup.html" id="signup">Sign Up</a></p>
+    </div>
+    
+</body>
+<script src="../js/login.js"></script>
+</html>

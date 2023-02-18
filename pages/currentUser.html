@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0b4039aefe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+
+    <script src="./../js/firebase.js"></script>
+    <link rel="stylesheet" href="./../css/nav.css" />
+    <link rel="stylesheet" href="./../css/All currentuser.css" />
+    
+  </head>
+
+  <body>
+    <div id="signUp">
+      <div id="homeImagesIcon">
+        <li>
+          <a href="./home.html"><i class="fa-solid fa-house icons"></i></a>
+        </li>
+
+        <li>
+          <a href="./allusers.html"><i class="fa-solid fa-users icons"></i></a>
+        </li>
+        <li>
+          <a href="./allVideos.html"><i class="fa-solid fa-video icons"></i></a>
+        </li>
+        <li>
+          <a href="./postaddpage.html"
+            ><i class="fa-solid fa-circle-plus icons"></i
+          ></a>
+        </li>
+        <li id="oneuser">
+          <a href="./currentUser.html"
+            ><i class="fa-solid fa-user icons"></i
+          ></a>
+        </li>
+        <li>
+          <i
+            class="fa-solid fa-right-from-bracket icons"
+            onclick="logout()"
+          ></i>
+        </li>
+      </div>
+      <div id="loaderDiv">
+
+        <img src="./../images/Loading_icon.gif" alt="" id="loader">
+      </div>
+      <div id="mainDiv">
+        <div class="panel">
+         
+
+          
+          <!--  great-->
+          <div id="maindiv">
+            <span  id="maindiv1">
+              <img
+              src="./../images/coverimage.png"
+              alt=""
+              class="cover_image"
+              id="coverimage"
+            />
+            </span>
+            <span id="maindiv2">
+              <img
+            src="./../images/profile.png"
+            alt=""
+            class="cover_profile"
+            id="profileimage"
+           
+          />
+            </span>
+            <span id="maindiv3">
+                
+    <div class="_upload form-file">
+      <label for="exampleFormControlFile3" class="form-file-label"
+        ><img src="./../images/upload.png" id="selecrtProfile" alt=""></label
+      ><input id="exampleFormControlFile3" onchange="profileimagefunction(event)" type="file" class="form-control-file" />
+      
+    </div>
+            </span>
+            <span id="maindiv4">
+                
+              <div class="_upload form-file">
+                <label for="exampleFormControlFile1" class="form-file-label"
+                  ><img src="./../images/upload.png" id="selecrtcover" alt=""></label
+                ><input id="exampleFormControlFile1"  onchange="coverimagefunction(event)"  type="file" class="form-control-file" />
+              </div>
+                      </span>
+        </div>
+          <!-- great -->
+            <!-- bootstap -->
+        <div class="progress" id="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" id="progress-bar" >25%</div>
+        </div>
+        <!-- bootstap -->
+          <!-- profile image -->
+        </div>
+        <div id="currentUserINput"></div>
+
+        <div class="input_posts">
+          <button class="button_poin" id="button_poinID">Profile</button>
+          <button class="button_poin" id="button_poId">Posts</button>
+        </div>
+
+        <div class="allinputs" id="allinputs" style="display: flex">
+          <label class="labels" for="firstname">First Name :</label
+          ><input type="text" class="inputs-all" id="firstname" /><label
+            class="labels"
+            for="lastname"
+            >Last Name :</label
+          ><input type="text" class="inputs-all" id="lastname" /><label
+            class="labels"
+            for="mobilenumber"
+            >Mobile Number :</label
+          ><input type="number" class="inputs-all" id="mobilenumber" /><label
+            class="labels"
+            for="emailaddress"
+            >Email Address :</label
+          ><input type="email" class="inputs-all" id="emailaddress" /><label
+            class="labels"
+            for="description"
+            >Description :</label
+          ><textarea
+            class="description-all"
+            id="description"
+            placeholder="Description (Optional)"
+          ></textarea
+          ><button id="Update_Button" class="update_button">Update</button>
+          <p id="message"></p>
+        </div>
+        <div id="PostUpdateMadeDiv">
+
+          <div id="postsAllDiv"></div>
+
+
+        </div>
+        <!-- maindiv over -->
+      </div>
+    </div>
+    
+  </body>
+  <script src="./../js/currentUser.js"></script>
+</html>
+
+<!-- <div class="_upload form-file">
+  <label for="exampleFormControlFile3" class="form-file-label"
+    >Upload Photo</label
+  ><input id="exampleFormControlFile3" type="file" class="form-control-file" />
+</div> -->

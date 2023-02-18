@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="../js/firebase.js"></script> 
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <div id="signUp">
+        <h1>Sign Up</h1>
+    <label for="fName">First Name:</label>
+    <input type="text" placeholder="First Name: " id="fName" name="fName">
+    <label for="lName">Last Name:</label>
+    <input type="text" placeholder="Last Name: " id="lName" name="lName">
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="number" placeholder="Mobile Number: " id="mobileNumber" name="mobileNumber">
+    <label for="Email">Email Address:</label>
+    <input type="email" placeholder="Email Address: " id="Email" name="Email">
+    <label for="password">Password:</label>
+    <input type="password" placeholder="Password: " id="password" name="password">
+    <label for="re_password">Re-enter Password:</label>
+    <input type="password" placeholder="Re-enter password: " id="re_password" name="re_password">
+    <p id="message"></p>
+    <input type="submit" value="Sign Up" id="submit" onclick="signup()">
+    <p id="acc">Don't have an account? <a href="./login.html" id="signup">Sign Up</a></p>
+
+</div>
+
+</body>
+<script src="../js/signup.js"></script>
+</html>

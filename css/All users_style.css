@@ -1,0 +1,119 @@
+body{
+    padding: 20px 0px;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#signUp{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    height: auto;
+    
+}
+
+@media only screen and (max-width: 900px) {
+  #signUp{
+    width: 60%;
+  }
+  }
+  @media only screen and (max-width: 500px) {
+    #signUp{
+      width: 95%;
+    }
+    }
+
+
+
+#loader{
+    display: block;
+}
+#nopost{
+    font-size: 20px;
+    text-align: center;
+    display: none;
+}
+
+
+
+
+
+/* accordian */
+.accordion {
+  position: relative;
+ background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 97%;
+  border: 1px solid #b9b9b9;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+
+
+.panel {
+  width: 96%;
+  padding: 7px;
+  display: none;
+  background-color: white;
+  border: 1px solid #b9b9b9;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+  /* accordian */
+
+.profilePic{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+
+}
+.profile_name{
+  font-size: 18px;
+margin-left: 5px;
+margin-top: 2px;
+text-transform: capitalize;
+}
+.arrows{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+right: 5px;
+}
+.cover_image{
+  width: 100%;
+  height: 300px;
+  
+}
+.cover_profile{
+  border-radius: 100%;
+  margin-left: 15px;
+  margin-top: -100px;
+  width: 147px;
+  height: 147px;
+
+}
+
+.fa-users{
+  color: blue;
+ 
+}
+#users_icon{
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  
+}

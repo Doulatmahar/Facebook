@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="../js/firebase.js"></script>
+    <link rel="stylesheet" href="../css/email-verification.css">
+</head>
+<body>
+    <div id="verify">
+        <div id="img"><img src="../images/email.png" alt=""></div>
+        <h2>Please verify your email</h2>
+        <p>You're almost there! we sent an email to <a href="mailto:user.email" id="email"></a></p>
+        <p>Just click on the linkin that email to complete your signup. If you don't see it, you may need to check spam folder.</p>
+        <p id="message"></p>
+        <div id="btn"> 
+            <button onclick="ResendEmail()">Resend Email</button>
+            <button onclick="reloadpage()">Confirm</button>
+        </div>
+    </div>
+
+</body>
+<script src="../js/email-verification.js"></script>
+</html>

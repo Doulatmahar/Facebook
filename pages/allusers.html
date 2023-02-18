@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0b4039aefe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+
+    <script src="./../js/firebase.js"></script>
+    <link rel="stylesheet" href="./../css/nav.css" />
+    <link rel="stylesheet" href="./../css/All users_style.css" />
+  </head>
+  <body>
+    <div id="signUp">
+      <div id="homeImagesIcon">
+        <li>
+          <a href="./home.html"><i class="fa-solid fa-house icons"></i></a>
+        </li>
+
+        <li id="users_icon">
+          <a href="./allusers.html"><i class="fa-solid fa-users icons"></i></a>
+        </li>
+        <li>
+          <a href="./allVideos.html"><i class="fa-solid fa-video icons"></i></a>
+        </li>
+        <li>
+          <a href="./postaddpage.html"
+            ><i class="fa-solid fa-circle-plus icons"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./currentUser.html"><i class="fa-solid fa-user icons"></i></a>
+        </li>
+        <li>
+          <i
+            class="fa-solid fa-right-from-bracket icons"
+            onclick="logout()"
+          ></i>
+        </li>
+      </div>
+      <div id="loaderDiv">
+
+        <img src="./../images/Loading_icon.gif" alt="" id="loader">
+      </div>
+
+      <div class="accordion123" id="accordionExample"></div>
+    </div>
+  </body>
+  <script src="./../js/allUsers.js"></script>
+</html>
